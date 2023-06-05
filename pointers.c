@@ -34,9 +34,10 @@ int main(){
     printf("%p\n",arr);
     // ptr == &arr[0]
     int * ptr = arr;
-    * ptr = 2;       // * arr         0R  arr[0]
-    * (ptr + 1) = 3; // * (arr + 1)   OR  arr[1]
-    * (ptr + 2) = 5; // * (arr + 2)   OR  arr[2]
+    * ptr = 2;       // * ptr         0R  ptr[0]
+    * (ptr + 1) = 3; // * (ptr + 1)   OR  ptr[1]
+    * (ptr + 2) = 5; // * (ptr + 2)   OR  ptr[2]
+    // ptr++ | this way we incriment pointer to next slot (arr[1])
 
     return 0;
 }
